@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   //Start assertion
   if (actual === expected) {
     return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
@@ -7,7 +7,7 @@ const assertEqual = function (actual, expected) {
   }
 };
 
-const tail = function (array) {
+const tail = function(array) {
   const val = array.slice(1);
   return val;
 };
