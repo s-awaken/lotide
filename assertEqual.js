@@ -1,4 +1,4 @@
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   //Start assertion
   if (actual === expected) {
     return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
