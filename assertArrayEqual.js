@@ -8,7 +8,7 @@ const eqArrays = function (array_1, array_2) {
   return equal;
 };
 
-const assertArrayEqual = function (actual, expected) {
+const assertArraysEqual = function (actual, expected) {
   if (eqArrays(actual, expected)) {
     return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
   } else {
