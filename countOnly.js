@@ -1,4 +1,4 @@
-const countOnly = function (allItems, itemsToCount) {
+const countOnly = function(allItems, itemsToCount) {
   const result = {};
   for (const item of allItems) {
     if (result[item]) {
@@ -27,7 +27,7 @@ const result1 = countOnly(firstNames, {
   Fang: true,
 });
 
-const assertEqual = function (actual, expected) {
+const assertEqual = function(actual, expected) {
   //Start assertion
   if (actual === expected) {
     return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;

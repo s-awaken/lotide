@@ -1,7 +1,7 @@
-const eqArrays = function (array_1, array_2) {
+const eqArrays = function(array1, array2) {
   let equal = true;
-  for (let i = 0; i < array_1.length; i++) {
-    if (array_1[i] !== array_2[i]) {
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
       equal = false;
     }
   }

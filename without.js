@@ -1,9 +1,9 @@
-const without = function (array_1, array_2) {
+const without = function(array1, array2) {
   const newArray = [];
-  for (let i = 0; i < array_1.length; i++) {
-    const found = array_2.find((ele) => ele === array_1[i]);
+  for (let i = 0; i < array1.length; i++) {
+    const found = array2.find((ele) => ele === array1[i]);
     if (!found) {
-      newArray.push(array_1[i]);
+      newArray.push(array1[i]);
     }
   }
   return newArray;
@@ -12,17 +12,17 @@ const without = function (array_1, array_2) {
 console.log(without([1, 2, 3], [1]));
 console.log(without(["1", "2", "3"], [1, 2, "3"]));
 
-const eqArrays = function (array_1, array_2) {
+const eqArrays = function(array1, array2) {
   let equal = true;
-  for (let i = 0; i < array_1.length; i++) {
-    if (array_1[i] !== array_2[i]) {
+  for (let i = 0; i < array1.length; i++) {
+    if (array1[i] !== array2[i]) {
       equal = false;
     }
   }
   return equal;
 };
 
-const assertArraysEqual = function (actual, expected) {
+const assertArraysEqual = function(actual, expected) {
   if (eqArrays(actual, expected)) {
     return `✅✅✅ Assertion Passed: ${actual} === ${expected}`;
   } else {

@@ -1,4 +1,4 @@
-const flatten = function (array) {
+const flatten = function(array) {
   return array.reduce((acc, x) => acc.concat(x), []);
 };
 
