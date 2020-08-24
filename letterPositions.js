@@ -10,4 +10,4 @@ const letterPositions = function(sentence) {
   }
   return results;
 };
-console.log(letterPositions("Hello World"));
+module.exports = letterPositions;
