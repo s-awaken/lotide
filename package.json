@@ -1,5 +1,6 @@
 {
   "name": "lotide",
+  "email": "syrym.zhauken@gmail.com",
   "version": "1.0.0",
   "description": "Syrym's project for Lighthouse Labs Bootcamp",
   "main": "index.js",
