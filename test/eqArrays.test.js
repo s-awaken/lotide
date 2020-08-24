@@ -1,12 +1,21 @@
+const assert = require('chai').assert;
 const eqArrays = require('../eqArrays');
 
-
-eqArrays([1, 2, 3], [1, 2, 3]); // => true
-eqArrays([1, 2, 3], [3, 2, 1]); // => false
-
-console.log(eqArrays(["1", "2", "3"], ["1", "2", "3"])); // => true
-console.log(eqArrays(["1", "2", "3"], ["1", "2", 3])); // => false
-console.log(eqArrays([[2, 3], [4]], [[2, 3], [4]])); // => true
-
-console.log(eqArrays([[2, 3], [4]], [[2, 3], [4, 5]])); // => false
-console.log(eqArrays([[2, 3], [4]], [[2, 3], 4])); // => false
+describe("#eqArrays", ()=>{
+  
+  it("should return true when passed [1, 2], [1, 2]", ()=>{
+    const array1 = [1, 2];
+    const array2 = [1, 2];
+    assert.equal(eqArrays(array1, array2), true);
+  });
+  it("should return false when passed [1, 3], [1, 2]", ()=>{
+    const array1 = [1, 3];
+    const array2 = [1, 2];
+    assert.equal(eqArrays(array1, array2), false);
+  });
+  it("should return false when passed [1, 2, 3], [1, 2]", ()=>{
+    const array1 = [1, 2, 3];
+    const array2 = [1, 2];
+    assert.equal(eqArrays(array1, array2), false);
+  });
+});
